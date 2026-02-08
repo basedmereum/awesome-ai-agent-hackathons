@@ -1,0 +1,147 @@
+name: Update Hackathons
+
+on:
+  schedule:
+    # Every 6 hours
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Scrape known platforms
+      - name: Scrape Devpost
+        run: npx tsx src/scrapers/devpost.ts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        continue-on-error: true
+
+      - name: Scrape LabLab
+        run: npx tsx src/scrapers/lablab.ts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        continue-on-error: true
+
+      - name: Scrape blockchain sources
+        run: npx tsx src/scrapers/blockchain.ts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        continue-on-error: true
+
+      # Update lifecycle statuses based on dates
+      - name: Update statuses
+        run: npx tsx src/lifecycle.ts
+
+      # Regenerate all outputs
+      - name: Generate outputs
+        run: npx tsx src/generate/index.ts
+
+      # Commit and push if changes exist
+      - name: Commit changes
+        run: |
+          git config user.name "hackathon-bot"
+          git config user.email "bot@hackathon-tracker.dev"
+          git add -A
+          git diff --staged --quiet || git commit -m "chore: update hackathon listings $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
+
+  # Weekly deep web search discovery
+  weekly-discovery:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 0 * * 1'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run web search discovery
+        run: npx tsx src/discovery/web-search.ts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SERP_API_KEY: ${{ secrets.SERP_API_KEY }}
+
+      - name: Update statuses
+        run: npx tsx src/lifecycle.ts
+
+      - name: Generate outputs
+        run: npx tsx src/generate/index.ts
+
+      - name: Create PR for review
+        run: |
+          BRANCH="discovery/$(date +%Y%m%d)"
+          git config user.name "hackathon-bot"
+          git config user.email "bot@hackathon-tracker.dev"
+          git checkout -b "$BRANCH"
+          git add -A
+          if ! git diff --staged --quiet; then
+            git commit -m "feat: new hackathons from weekly discovery"
+            git push -u origin "$BRANCH"
+            gh pr create \
+              --title "New hackathons found $(date +%Y-%m-%d)" \
+              --body "Automated weekly discovery found new hackathons. Please review the additions."
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Process hackathon submissions from issues
+  process-submission:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'issues' && contains(github.event.issue.labels.*.name, 'hackathon-submission')
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Extract URL from issue
+        id: extract
+        run: |
+          URL=$(echo "${{ github.event.issue.body }}" | grep -oP 'https?://\S+' | head -1)
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+
+      - name: Process submission
+        run: npx tsx src/submit-url.ts "${{ steps.extract.outputs.url }}"
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Generate outputs
+        run: npx tsx src/generate/index.ts
+
+      - name: Create PR
+        run: |
+          BRANCH="submission/issue-${{ github.event.issue.number }}"
+          git config user.name "hackathon-bot"
+          git config user.email "bot@hackathon-tracker.dev"
+          git checkout -b "$BRANCH"
+          git add -A
+          if ! git diff --staged --quiet; then
+            git commit -m "feat: add hackathon from issue #${{ github.event.issue.number }}"
+            git push -u origin "$BRANCH"
+            gh pr create \
+              --title "Add hackathon from #${{ github.event.issue.number }}" \
+              --body "Automatically extracted from issue #${{ github.event.issue.number }}."
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

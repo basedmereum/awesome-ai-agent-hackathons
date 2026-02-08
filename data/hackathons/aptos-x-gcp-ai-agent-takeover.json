@@ -1,0 +1,26 @@
+{
+  "id": "aptos-x-gcp-ai-agent-takeover",
+  "name": "Aptos x GCP AI Agent Takeover",
+  "organizer": "Aptos / Google Cloud",
+  "url": "https://thunderdome.hackerearth.com/",
+  "status": "active",
+  "format": "virtual",
+  "prizePool": {
+    "total": 3000,
+    "currency": "USD"
+  },
+  "categories": [
+    "ai-agents",
+    "blockchain",
+    "aptos",
+    "defi",
+    "autonomous-agents"
+  ],
+  "blockchain": {
+    "chain": "Aptos"
+  },
+  "links": {},
+  "source": "blockchain-aptos",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.8
+}

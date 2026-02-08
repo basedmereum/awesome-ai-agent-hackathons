@@ -1,0 +1,19 @@
+{
+  "id": "hackathon-for-mcp-and-ai-agents",
+  "name": "Hackathon for MCP and AI Agents",
+  "organizer": "AI Hackathon Dev",
+  "url": "https://aihackathon.dev/",
+  "status": "registration_open",
+  "format": "virtual",
+  "registrationOpen": "2026-02-02",
+  "submissionDeadline": "2026-03-01",
+  "categories": [
+    "ai-agents",
+    "mcp",
+    "autonomous-agents"
+  ],
+  "links": {},
+  "source": "web-search",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.8
+}

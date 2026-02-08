@@ -1,0 +1,18 @@
+{
+  "id": "100-agents-hackathon",
+  "name": "100 Agents Hackathon",
+  "organizer": "100 Agents Community",
+  "url": "https://100agents.devpost.com/",
+  "status": "registration_open",
+  "format": "virtual",
+  "description": "Pushing the limits of agentic AI with top open-source sponsors and experts.",
+  "categories": [
+    "ai-agents",
+    "multi-agent",
+    "autonomous-agents"
+  ],
+  "links": {},
+  "source": "devpost",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.8
+}

@@ -1,0 +1,21 @@
+{
+  "id": "sui-agent-typhoon",
+  "name": "Sui Agent Typhoon",
+  "organizer": "Sui Foundation",
+  "url": "https://sui.io/sui-agent-typhoon",
+  "status": "registration_open",
+  "format": "virtual",
+  "categories": [
+    "ai-agents",
+    "blockchain",
+    "sui",
+    "autonomous-agents"
+  ],
+  "blockchain": {
+    "chain": "Sui"
+  },
+  "links": {},
+  "source": "blockchain-sui",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.8
+}

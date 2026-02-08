@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Agent Hackathons</title>
+    <link>https://github.com/your-username/awesome-ai-agent-hackathons</link>
+    <description>Automatically updated directory of AI agent and agentic coding hackathons</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Feb 2026 14:56:20 GMT</lastBuildDate>
+    <atom:link href="https://your-username.github.io/awesome-ai-agent-hackathons/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>100 Agents Hackathon</title>
+      <link>https://100agents.devpost.com/</link>
+      <guid isPermaLink="true">https://100agents.devpost.com/</guid>
+      <description>virtual hackathon by 100 Agents Community. Prize: TBD. Deadline: TBD</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>virtual</category>
+      <category>ai-agents</category>
+      <category>multi-agent</category>
+      <category>autonomous-agents</category>
+    </item>
+    <item>
+      <title>Aptos x GCP AI Agent Takeover</title>
+      <link>https://thunderdome.hackerearth.com/</link>
+      <guid isPermaLink="true">https://thunderdome.hackerearth.com/</guid>
+      <description>virtual hackathon by Aptos / Google Cloud. Prize: $3,000 | Aptos. Deadline: TBD</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>virtual</category>
+      <category>ai-agents</category>
+      <category>blockchain</category>
+      <category>aptos</category>
+      <category>defi</category>
+      <category>autonomous-agents</category>
+    </item>
+    <item>
+      <title>Circle Agent-Powered Hackathon</title>
+      <link>https://stabledash.com/news/2026-02-03-openclaw-announces-30000-usdc-prize-pool-for-agent-powered-hackathon</link>
+      <guid isPermaLink="true">https://stabledash.com/news/2026-02-03-openclaw-announces-30000-usdc-prize-pool-for-agent-powered-hackathon</guid>
+      <description>virtual hackathon by Circle / OpenClaw. Prize: $30,000. Deadline: TBD</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>virtual</category>
+      <category>ai-agents</category>
+      <category>blockchain</category>
+      <category>usdc</category>
+      <category>autonomous-agents</category>
+    </item>
+    <item>
+      <title>Colosseum AI Agent Hackathon (Solana)</title>
+      <link>https://colosseum.com/agent-hackathon/</link>
+      <guid isPermaLink="true">https://colosseum.com/agent-hackathon/</guid>
+      <description>virtual hackathon by Colosseum / Solana Foundation. Prize: $100,000 | Solana. Deadline: 2026-02-12</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>virtual</category>
+      <category>ai-agents</category>
+      <category>autonomous-agents</category>
+      <category>blockchain</category>
+      <category>solana</category>
+      <category>defi</category>
+    </item>
+    <item>
+      <title>DeveloperWeek 2026 Hackathon</title>
+      <link>https://www.developerweek.com/hackathon/</link>
+      <guid isPermaLink="true">https://www.developerweek.com/hackathon/</guid>
+      <description>hybrid hackathon by DeveloperWeek. Prize: TBD. Deadline: 2026-02-20</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>hybrid</category>
+      <category>ai-agents</category>
+      <category>general</category>
+    </item>
+    <item>
+      <title>Fetch.ai NextGen Agents Hackathon</title>
+      <link>https://innovationlab.fetch.ai/events</link>
+      <guid isPermaLink="true">https://innovationlab.fetch.ai/events</guid>
+      <description>virtual hackathon by Fetch.ai / Internet Computer. Prize: TBD | Fetch.ai. Deadline: TBD</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>virtual</category>
+      <category>ai-agents</category>
+      <category>blockchain</category>
+      <category>fetch-ai</category>
+      <category>autonomous-agents</category>
+    </item>
+    <item>
+      <title>Hackathon for MCP and AI Agents</title>
+      <link>https://aihackathon.dev/</link>
+      <guid isPermaLink="true">https://aihackathon.dev/</guid>
+      <description>virtual hackathon by AI Hackathon Dev. Prize: TBD. Deadline: 2026-03-01</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>virtual</category>
+      <category>ai-agents</category>
+      <category>mcp</category>
+      <category>autonomous-agents</category>
+    </item>
+    <item>
+      <title>LabLab Web3 AI Agent Hackathon</title>
+      <link>https://lablab.ai/ai-hackathons</link>
+      <guid isPermaLink="true">https://lablab.ai/ai-hackathons</guid>
+      <description>virtual hackathon by LabLab.ai. Prize: 50,000 SURGE Token. Deadline: 2026-02-19</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>virtual</category>
+      <category>ai-agents</category>
+      <category>blockchain</category>
+      <category>web3</category>
+    </item>
+    <item>
+      <title>Microsoft AI Agents Hackathon 2026</title>
+      <link>https://microsoft.github.io/AI_Agents_Hackathon/</link>
+      <guid isPermaLink="true">https://microsoft.github.io/AI_Agents_Hackathon/</guid>
+      <description>virtual hackathon by Microsoft. Prize: $35,000. Deadline: 2026-04-30</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>virtual</category>
+      <category>ai-agents</category>
+      <category>semantic-kernel</category>
+      <category>autogen</category>
+      <category>azure</category>
+    </item>
+    <item>
+      <title>NVIDIA Agent Toolkit Hackathon</title>
+      <link>https://developer.nvidia.com/agentiq-hackathon</link>
+      <guid isPermaLink="true">https://developer.nvidia.com/agentiq-hackathon</guid>
+      <description>virtual hackathon by NVIDIA. Prize: TBD. Deadline: TBD</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>virtual</category>
+      <category>ai-agents</category>
+      <category>nvidia</category>
+      <category>autonomous-agents</category>
+    </item>
+    <item>
+      <title>Solana SendAI Hackathon</title>
+      <link>https://hackathon.sendai.fun/</link>
+      <guid isPermaLink="true">https://hackathon.sendai.fun/</guid>
+      <description>virtual hackathon by SendAI / Solana. Prize: TBD | Solana. Deadline: TBD</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>virtual</category>
+      <category>ai-agents</category>
+      <category>blockchain</category>
+      <category>solana</category>
+      <category>autonomous-agents</category>
+    </item>
+    <item>
+      <title>Sui Agent Typhoon</title>
+      <link>https://sui.io/sui-agent-typhoon</link>
+      <guid isPermaLink="true">https://sui.io/sui-agent-typhoon</guid>
+      <description>virtual hackathon by Sui Foundation. Prize: TBD | Sui. Deadline: TBD</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>virtual</category>
+      <category>ai-agents</category>
+      <category>blockchain</category>
+      <category>sui</category>
+      <category>autonomous-agents</category>
+    </item>
+  </channel>
+</rss>

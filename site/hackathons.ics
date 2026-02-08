@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hackathon Tracker//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI Agent Hackathons
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260212
+DTEND;VALUE=DATE:20260212
+SUMMARY:Colosseum AI Agent Hackathon (Solana) - Deadline
+DESCRIPTION:virtual hackathon by Colosseum / Solana Foundation. Prize: $100,000. https://colosseum.com/agent-hackathon/
+URL:https://colosseum.com/agent-hackathon/
+UID:colosseum-ai-agent-hackathon-solana@hackathon-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260220
+DTEND;VALUE=DATE:20260220
+SUMMARY:DeveloperWeek 2026 Hackathon - Deadline
+DESCRIPTION:hybrid hackathon by DeveloperWeek. Prize: TBD. https://www.developerweek.com/hackathon/
+URL:https://www.developerweek.com/hackathon/
+UID:developerweek-2026-hackathon@hackathon-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260301
+DTEND;VALUE=DATE:20260301
+SUMMARY:Hackathon for MCP and AI Agents - Deadline
+DESCRIPTION:virtual hackathon by AI Hackathon Dev. Prize: TBD. https://aihackathon.dev/
+URL:https://aihackathon.dev/
+UID:hackathon-for-mcp-and-ai-agents@hackathon-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260219
+DTEND;VALUE=DATE:20260219
+SUMMARY:LabLab Web3 AI Agent Hackathon - Deadline
+DESCRIPTION:virtual hackathon by LabLab.ai. Prize: 50,000 SURGE Token. https://lablab.ai/ai-hackathons
+URL:https://lablab.ai/ai-hackathons
+UID:lablab-web3-ai-agent-hackathon@hackathon-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260430
+DTEND;VALUE=DATE:20260430
+SUMMARY:Microsoft AI Agents Hackathon 2026 - Deadline
+DESCRIPTION:virtual hackathon by Microsoft. Prize: $35,000. https://microsoft.github.io/AI_Agents_Hackathon/
+URL:https://microsoft.github.io/AI_Agents_Hackathon/
+UID:microsoft-ai-agents-hackathon-2026@hackathon-tracker
+END:VEVENT
+END:VCALENDAR

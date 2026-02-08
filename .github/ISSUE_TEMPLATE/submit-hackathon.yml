@@ -1,0 +1,40 @@
+name: Submit a Hackathon
+description: Submit an AI agent hackathon for automatic extraction and inclusion
+labels: ["hackathon-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Paste the URL of an AI agent or agentic coding hackathon below.
+        Our bot will automatically extract the details and open a PR.
+
+  - type: input
+    id: url
+    attributes:
+      label: Hackathon URL
+      description: The main page for the hackathon (registration or info page)
+      placeholder: "https://example.com/hackathon"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes (optional)
+      description: Any extra context about this hackathon
+      placeholder: "e.g., Prize pool was just announced at $50k, registration closes March 1st"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Primary Category
+      options:
+        - AI Agents (general)
+        - Blockchain / Web3
+        - Enterprise (Microsoft, Google, NVIDIA, etc.)
+        - Framework-specific (MCP, LangChain, CrewAI, etc.)
+        - Other
+    validations:
+      required: true

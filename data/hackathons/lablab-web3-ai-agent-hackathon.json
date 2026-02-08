@@ -1,0 +1,19 @@
+{
+  "id": "lablab-web3-ai-agent-hackathon",
+  "name": "LabLab Web3 AI Agent Hackathon",
+  "organizer": "LabLab.ai",
+  "url": "https://lablab.ai/ai-hackathons",
+  "status": "active",
+  "format": "virtual",
+  "submissionDeadline": "2026-02-19",
+  "prizePool": {
+    "total": 50000,
+    "currency": "SURGE Token",
+    "breakdown": {}
+  },
+  "categories": ["ai-agents", "blockchain", "web3"],
+  "links": {},
+  "source": "lablab",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.8
+}

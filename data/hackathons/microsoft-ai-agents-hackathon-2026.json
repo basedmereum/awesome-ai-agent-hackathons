@@ -1,0 +1,25 @@
+{
+  "id": "microsoft-ai-agents-hackathon-2026",
+  "name": "Microsoft AI Agents Hackathon 2026",
+  "organizer": "Microsoft",
+  "url": "https://microsoft.github.io/AI_Agents_Hackathon/",
+  "status": "registration_open",
+  "format": "virtual",
+  "registrationDeadline": "2026-04-30",
+  "submissionDeadline": "2026-04-30",
+  "prizePool": {
+    "total": 35000,
+    "currency": "USD",
+    "breakdown": {
+      "Best Overall": 20000,
+      "Best C#": 5000,
+      "Best Python": 5000,
+      "Best JS/TS": 5000
+    }
+  },
+  "categories": ["ai-agents", "semantic-kernel", "autogen", "azure"],
+  "links": {},
+  "source": "devpost",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.8
+}

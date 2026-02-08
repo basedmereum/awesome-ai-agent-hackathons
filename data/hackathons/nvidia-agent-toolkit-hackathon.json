@@ -1,0 +1,18 @@
+{
+  "id": "nvidia-agent-toolkit-hackathon",
+  "name": "NVIDIA Agent Toolkit Hackathon",
+  "organizer": "NVIDIA",
+  "url": "https://developer.nvidia.com/agentiq-hackathon",
+  "status": "registration_open",
+  "format": "virtual",
+  "description": "Build with NVIDIA Agent Intelligence toolkit. Prize includes RTX 5090 signed by Jensen Huang.",
+  "categories": [
+    "ai-agents",
+    "nvidia",
+    "autonomous-agents"
+  ],
+  "links": {},
+  "source": "web-search",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.8
+}

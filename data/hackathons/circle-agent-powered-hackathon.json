@@ -1,0 +1,27 @@
+{
+  "id": "circle-agent-powered-hackathon",
+  "name": "Circle Agent-Powered Hackathon",
+  "organizer": "Circle / OpenClaw",
+  "url": "https://stabledash.com/news/2026-02-03-openclaw-announces-30000-usdc-prize-pool-for-agent-powered-hackathon",
+  "status": "active",
+  "format": "virtual",
+  "prizePool": {
+    "total": 30000,
+    "currency": "USDC",
+    "breakdown": {
+      "Track 1": 10000,
+      "Track 2": 10000,
+      "Track 3": 10000
+    }
+  },
+  "categories": [
+    "ai-agents",
+    "blockchain",
+    "usdc",
+    "autonomous-agents"
+  ],
+  "links": {},
+  "source": "web-search",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.8
+}

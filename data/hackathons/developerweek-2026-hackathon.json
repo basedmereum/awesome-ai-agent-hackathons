@@ -1,0 +1,15 @@
+{
+  "id": "developerweek-2026-hackathon",
+  "name": "DeveloperWeek 2026 Hackathon",
+  "organizer": "DeveloperWeek",
+  "url": "https://www.developerweek.com/hackathon/",
+  "status": "active",
+  "format": "hybrid",
+  "submissionDeadline": "2026-02-20",
+  "location": "San Jose, CA",
+  "categories": ["ai-agents", "general"],
+  "links": {},
+  "source": "web-search",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.8
+}

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agent Hackathons - Live Directory</title>
+  <meta name="description" content="Automatically updated directory of AI agent and agentic coding hackathons. Filter by prize pool, format, blockchain, and deadline.">
+  <link rel="alternate" type="application/rss+xml" title="AI Agent Hackathons" href="./feed.xml">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #12121a;
+      --surface-hover: #1a1a25;
+      --border: #2a2a3a;
+      --text: #e4e4ef;
+      --text-muted: #8888a0;
+      --accent: #6c63ff;
+      --accent-hover: #817aff;
+      --green: #34d399;
+      --yellow: #fbbf24;
+      --red: #f87171;
+      --blue: #60a5fa;
+      --orange: #fb923c;
+      --radius: 8px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, var(--accent), var(--blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .stats {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      margin: 1.5rem 0;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.75rem 1.25rem;
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .filters {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: end;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      flex: 1;
+      min-width: 150px;
+    }
+
+    .filter-group label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+    }
+
+    .filter-group select,
+    .filter-group input {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      padding: 0.5rem 0.75rem;
+      font-size: 0.875rem;
+      width: 100%;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .filter-group select:focus,
+    .filter-group input:focus {
+      border-color: var(--accent);
+    }
+
+    .filter-group select option {
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .reset-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text-muted);
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-size: 0.875rem;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+
+    .reset-btn:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
+
+    .results-count {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .hackathon-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    .hackathon-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      transition: border-color 0.15s, transform 0.1s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .hackathon-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .card-organizer {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .card-meta {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 0.75rem;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .tag-prize {
+      background: rgba(52, 211, 153, 0.15);
+      color: var(--green);
+    }
+
+    .tag-format {
+      background: rgba(96, 165, 250, 0.15);
+      color: var(--blue);
+    }
+
+    .tag-deadline {
+      background: rgba(251, 191, 36, 0.15);
+      color: var(--yellow);
+    }
+
+    .tag-chain {
+      background: rgba(251, 146, 60, 0.15);
+      color: var(--orange);
+    }
+
+    .tag-status {
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .status-registration_open { background: rgba(52, 211, 153, 0.15); color: var(--green); }
+    .status-active { background: rgba(96, 165, 250, 0.15); color: var(--blue); }
+    .status-upcoming { background: rgba(251, 191, 36, 0.15); color: var(--yellow); }
+    .status-judging { background: rgba(251, 146, 60, 0.15); color: var(--orange); }
+    .status-completed { background: rgba(136, 136, 160, 0.15); color: var(--text-muted); }
+
+    .card-categories {
+      display: flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+
+    .cat-tag {
+      padding: 0.15rem 0.45rem;
+      border-radius: 3px;
+      font-size: 0.65rem;
+      background: rgba(108, 99, 255, 0.1);
+      color: var(--accent);
+    }
+
+    .card-description {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-muted);
+    }
+
+    .empty-state p {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.15s;
+    }
+
+    .links a:hover {
+      color: var(--accent-hover);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+      margin-top: 3rem;
+    }
+
+    .sort-controls {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .sort-controls label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .sort-controls select {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      padding: 0.35rem 0.6rem;
+      font-size: 0.8rem;
+      outline: none;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 1rem; }
+      header h1 { font-size: 1.5rem; }
+      .stats { gap: 0.75rem; }
+      .filters { flex-direction: column; }
+      .filter-group { min-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI Agent Hackathons</h1>
+      <p>Automatically updated directory of AI agent and agentic coding hackathons</p>
+      <div class="links">
+        <a href="./feed.xml">RSS Feed</a>
+        <a href="./hackathons.ics">Calendar (iCal)</a>
+        <a href="https://github.com/your-username/awesome-ai-agent-hackathons">GitHub</a>
+        <a href="https://github.com/your-username/awesome-ai-agent-hackathons/issues/new?template=submit-hackathon.yml">Submit a Hackathon</a>
+      </div>
+    </header>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="filters">
+      <div class="filter-group">
+        <label for="filter-search">Search</label>
+        <input type="text" id="filter-search" placeholder="Name, organizer...">
+      </div>
+      <div class="filter-group">
+        <label for="filter-format">Format</label>
+        <select id="filter-format">
+          <option value="">All Formats</option>
+          <option value="hybrid">Hybrid</option>
+          <option value="virtual">Virtual</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-status">Status</label>
+        <select id="filter-status">
+          <option value="">All Statuses</option>
+          <option value="active">active</option>
+          <option value="registration_open">registration open</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-chain">Blockchain</label>
+        <select id="filter-chain">
+          <option value="">All (incl. non-blockchain)</option>
+          <option value="__any__">Any Blockchain</option>
+          <option value="Aptos">Aptos</option>
+          <option value="Fetch.ai">Fetch.ai</option>
+          <option value="Solana">Solana</option>
+          <option value="Sui">Sui</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-prize-min">Min Prize ($)</label>
+        <input type="number" id="filter-prize-min" placeholder="0" min="0" step="1000">
+      </div>
+      <div class="filter-group">
+        <label for="filter-deadline">Deadline Before</label>
+        <input type="date" id="filter-deadline">
+      </div>
+      <div class="filter-group">
+        <label for="filter-category">Category</label>
+        <select id="filter-category">
+          <option value="">All Categories</option>
+          <option value="ai-agents">ai-agents</option>
+          <option value="aptos">aptos</option>
+          <option value="autogen">autogen</option>
+          <option value="autonomous-agents">autonomous-agents</option>
+          <option value="azure">azure</option>
+          <option value="blockchain">blockchain</option>
+          <option value="defi">defi</option>
+          <option value="fetch-ai">fetch-ai</option>
+          <option value="general">general</option>
+          <option value="mcp">mcp</option>
+          <option value="multi-agent">multi-agent</option>
+          <option value="nvidia">nvidia</option>
+          <option value="semantic-kernel">semantic-kernel</option>
+          <option value="solana">solana</option>
+          <option value="sui">sui</option>
+          <option value="usdc">usdc</option>
+          <option value="web3">web3</option>
+        </select>
+      </div>
+      <button class="reset-btn" onclick="resetFilters()">Reset</button>
+    </div>
+
+    <div class="sort-controls">
+      <label for="sort-by">Sort by:</label>
+      <select id="sort-by">
+        <option value="deadline">Deadline (soonest)</option>
+        <option value="prize-desc">Prize (highest)</option>
+        <option value="prize-asc">Prize (lowest)</option>
+        <option value="name">Name (A-Z)</option>
+        <option value="updated">Recently Updated</option>
+      </select>
+    </div>
+
+    <div class="results-count" id="results-count"></div>
+    <div class="hackathon-grid" id="hackathon-grid"></div>
+  </div>
+
+  <footer>
+    <p>Auto-updated every 6 hours via GitHub Actions</p>
+    <p>Last build: 2026-02-08</p>
+  </footer>
+
+  <script>
+    const hackathons = [{"id":"100-agents-hackathon","name":"100 Agents Hackathon","organizer":"100 Agents Community","url":"https://100agents.devpost.com/","status":"registration_open","format":"virtual","description":"Pushing the limits of agentic AI with top open-source sponsors and experts.","categories":["ai-agents","multi-agent","autonomous-agents"],"links":{},"source":"devpost","lastUpdated":"2026-02-08","confidence":0.8},{"id":"aptos-x-gcp-ai-agent-takeover","name":"Aptos x GCP AI Agent Takeover","organizer":"Aptos / Google Cloud","url":"https://thunderdome.hackerearth.com/","status":"active","format":"virtual","prizePool":{"total":3000,"currency":"USD"},"categories":["ai-agents","blockchain","aptos","defi","autonomous-agents"],"blockchain":{"chain":"Aptos"},"links":{},"source":"blockchain-aptos","lastUpdated":"2026-02-08","confidence":0.8},{"id":"circle-agent-powered-hackathon","name":"Circle Agent-Powered Hackathon","organizer":"Circle / OpenClaw","url":"https://stabledash.com/news/2026-02-03-openclaw-announces-30000-usdc-prize-pool-for-agent-powered-hackathon","status":"active","format":"virtual","prizePool":{"total":30000,"currency":"USDC","breakdown":{"Track 1":10000,"Track 2":10000,"Track 3":10000}},"categories":["ai-agents","blockchain","usdc","autonomous-agents"],"links":{},"source":"web-search","lastUpdated":"2026-02-08","confidence":0.8},{"id":"colosseum-ai-agent-hackathon-solana","name":"Colosseum AI Agent Hackathon (Solana)","organizer":"Colosseum / Solana Foundation","url":"https://colosseum.com/agent-hackathon/","status":"active","format":"virtual","submissionDeadline":"2026-02-12","prizePool":{"total":100000,"currency":"USDC","breakdown":{"1st":50000,"2nd":30000,"3rd":15000,"Most Agentic":5000}},"categories":["ai-agents","autonomous-agents","blockchain","solana","defi"],"requirements":{"techStack":[],"teamSize":null,"constraints":"All code must be written by AI agents"},"blockchain":{"chain":"Solana"},"links":{},"source":"blockchain-solana","lastUpdated":"2026-02-08","confidence":0.8},{"id":"developerweek-2026-hackathon","name":"DeveloperWeek 2026 Hackathon","organizer":"DeveloperWeek","url":"https://www.developerweek.com/hackathon/","status":"active","format":"hybrid","submissionDeadline":"2026-02-20","categories":["ai-agents","general"],"location":"San Jose, CA","links":{},"source":"web-search","lastUpdated":"2026-02-08","confidence":0.8},{"id":"fetch-ai-nextgen-agents-hackathon","name":"Fetch.ai NextGen Agents Hackathon","organizer":"Fetch.ai / Internet Computer","url":"https://innovationlab.fetch.ai/events","status":"registration_open","format":"virtual","description":"Build autonomous AI agents using Fetch.ai ecosystem on decentralized infrastructure.","categories":["ai-agents","blockchain","fetch-ai","autonomous-agents"],"blockchain":{"chain":"Fetch.ai"},"links":{},"source":"blockchain-fetch-ai","lastUpdated":"2026-02-08","confidence":0.8},{"id":"hackathon-for-mcp-and-ai-agents","name":"Hackathon for MCP and AI Agents","organizer":"AI Hackathon Dev","url":"https://aihackathon.dev/","status":"registration_open","format":"virtual","registrationOpen":"2026-02-02","submissionDeadline":"2026-03-01","categories":["ai-agents","mcp","autonomous-agents"],"links":{},"source":"web-search","lastUpdated":"2026-02-08","confidence":0.8},{"id":"lablab-web3-ai-agent-hackathon","name":"LabLab Web3 AI Agent Hackathon","organizer":"LabLab.ai","url":"https://lablab.ai/ai-hackathons","status":"active","format":"virtual","submissionDeadline":"2026-02-19","prizePool":{"total":50000,"currency":"SURGE Token","breakdown":{}},"categories":["ai-agents","blockchain","web3"],"links":{},"source":"lablab","lastUpdated":"2026-02-08","confidence":0.8},{"id":"microsoft-ai-agents-hackathon-2026","name":"Microsoft AI Agents Hackathon 2026","organizer":"Microsoft","url":"https://microsoft.github.io/AI_Agents_Hackathon/","status":"registration_open","format":"virtual","registrationDeadline":"2026-04-30","submissionDeadline":"2026-04-30","prizePool":{"total":35000,"currency":"USD","breakdown":{"Best Overall":20000,"Best C#":5000,"Best Python":5000,"Best JS/TS":5000}},"categories":["ai-agents","semantic-kernel","autogen","azure"],"links":{},"source":"devpost","lastUpdated":"2026-02-08","confidence":0.8},{"id":"nvidia-agent-toolkit-hackathon","name":"NVIDIA Agent Toolkit Hackathon","organizer":"NVIDIA","url":"https://developer.nvidia.com/agentiq-hackathon","status":"registration_open","format":"virtual","description":"Build with NVIDIA Agent Intelligence toolkit. Prize includes RTX 5090 signed by Jensen Huang.","categories":["ai-agents","nvidia","autonomous-agents"],"links":{},"source":"web-search","lastUpdated":"2026-02-08","confidence":0.8},{"id":"solana-sendai-hackathon","name":"Solana SendAI Hackathon","organizer":"SendAI / Solana","url":"https://hackathon.sendai.fun/","status":"registration_open","format":"virtual","categories":["ai-agents","blockchain","solana","autonomous-agents"],"blockchain":{"chain":"Solana"},"links":{},"source":"blockchain-solana","lastUpdated":"2026-02-08","confidence":0.8},{"id":"sui-agent-typhoon","name":"Sui Agent Typhoon","organizer":"Sui Foundation","url":"https://sui.io/sui-agent-typhoon","status":"registration_open","format":"virtual","categories":["ai-agents","blockchain","sui","autonomous-agents"],"blockchain":{"chain":"Sui"},"links":{},"source":"blockchain-sui","lastUpdated":"2026-02-08","confidence":0.8}];
+
+    const statusOrder = {
+      registration_open: 0,
+      active: 1,
+      upcoming: 2,
+      judging: 3,
+      completed: 4,
+    };
+
+    const statusLabels = {
+      registration_open: "Registration Open",
+      active: "Active",
+      upcoming: "Upcoming",
+      judging: "Judging",
+      completed: "Completed",
+    };
+
+    function formatCurrency(amount, currency) {
+      if (!amount) return "TBD";
+      const cur = (currency || "USD").toUpperCase();
+      if (cur === "USD" || cur === "USDC") return "$" + amount.toLocaleString();
+      return amount.toLocaleString() + " " + currency;
+    }
+
+    function renderStats(filtered) {
+      const active = filtered.filter(h => ["registration_open", "active", "upcoming"].includes(h.status));
+      const totalPrize = active.reduce((s, h) => s + (h.prizePool?.total || 0), 0);
+      const blockchainCount = filtered.filter(h => h.blockchain).length;
+
+      document.getElementById("stats").innerHTML =
+        '<div class="stat"><div class="stat-value">' + active.length + '</div><div class="stat-label">Active</div></div>' +
+        '<div class="stat"><div class="stat-value">' + filtered.length + '</div><div class="stat-label">Total</div></div>' +
+        '<div class="stat"><div class="stat-value">' + formatCurrency(totalPrize, "USD") + '</div><div class="stat-label">Active Prizes</div></div>' +
+        '<div class="stat"><div class="stat-value">' + blockchainCount + '</div><div class="stat-label">Blockchain</div></div>';
+    }
+
+    function renderCard(h) {
+      const prize = h.prizePool ? formatCurrency(h.prizePool.total, h.prizePool.currency) : null;
+      const deadline = h.submissionDeadline || h.registrationDeadline;
+      const chain = h.blockchain?.chain;
+
+      let meta = "";
+      if (prize) meta += '<span class="tag tag-prize">' + prize + '</span>';
+      meta += '<span class="tag tag-format">' + h.format + '</span>';
+      if (deadline) meta += '<span class="tag tag-deadline">' + deadline + '</span>';
+      if (chain) meta += '<span class="tag tag-chain">' + chain + '</span>';
+
+      const cats = h.categories.slice(0, 5).map(function(c) {
+        return '<span class="cat-tag">' + c + '</span>';
+      }).join("");
+
+      const desc = h.description ? '<div class="card-description">' + h.description.replace(/</g, "&lt;") + '</div>' : "";
+
+      return '<a href="' + h.url + '" target="_blank" rel="noopener" class="hackathon-card">' +
+        '<div class="card-header">' +
+          '<div><div class="card-title">' + h.name.replace(/</g, "&lt;") + '</div>' +
+          '<div class="card-organizer">' + h.organizer.replace(/</g, "&lt;") + '</div></div>' +
+          '<span class="tag-status status-' + h.status + '">' + (statusLabels[h.status] || h.status) + '</span>' +
+        '</div>' +
+        desc +
+        '<div class="card-meta">' + meta + '</div>' +
+        '<div class="card-categories">' + cats + '</div>' +
+      '</a>';
+    }
+
+    function getFilters() {
+      return {
+        search: document.getElementById("filter-search").value.toLowerCase().trim(),
+        format: document.getElementById("filter-format").value,
+        status: document.getElementById("filter-status").value,
+        chain: document.getElementById("filter-chain").value,
+        prizeMin: parseInt(document.getElementById("filter-prize-min").value) || 0,
+        deadline: document.getElementById("filter-deadline").value,
+        category: document.getElementById("filter-category").value,
+        sortBy: document.getElementById("sort-by").value,
+      };
+    }
+
+    function applyFilters() {
+      var f = getFilters();
+
+      var filtered = hackathons.filter(function(h) {
+        if (f.search) {
+          var searchable = (h.name + " " + h.organizer + " " + h.categories.join(" ")).toLowerCase();
+          if (searchable.indexOf(f.search) === -1) return false;
+        }
+        if (f.format && h.format !== f.format) return false;
+        if (f.status && h.status !== f.status) return false;
+        if (f.chain === "__any__" && !h.blockchain) return false;
+        if (f.chain && f.chain !== "__any__" && (!h.blockchain || h.blockchain.chain !== f.chain)) return false;
+        if (f.prizeMin > 0 && (!h.prizePool || h.prizePool.total < f.prizeMin)) return false;
+        if (f.deadline) {
+          var d = h.submissionDeadline || h.registrationDeadline;
+          if (!d || d > f.deadline) return false;
+        }
+        if (f.category && !h.categories.includes(f.category)) return false;
+        return true;
+      });
+
+      filtered.sort(function(a, b) {
+        switch (f.sortBy) {
+          case "deadline":
+            var da = a.submissionDeadline || a.registrationDeadline || "9999";
+            var db = b.submissionDeadline || b.registrationDeadline || "9999";
+            return da.localeCompare(db);
+          case "prize-desc":
+            return (b.prizePool?.total || 0) - (a.prizePool?.total || 0);
+          case "prize-asc":
+            return (a.prizePool?.total || 0) - (b.prizePool?.total || 0);
+          case "name":
+            return a.name.localeCompare(b.name);
+          case "updated":
+            return b.lastUpdated.localeCompare(a.lastUpdated);
+          default:
+            return (statusOrder[a.status] || 99) - (statusOrder[b.status] || 99);
+        }
+      });
+
+      renderStats(filtered);
+
+      document.getElementById("results-count").textContent =
+        "Showing " + filtered.length + " of " + hackathons.length + " hackathons";
+
+      var grid = document.getElementById("hackathon-grid");
+      if (filtered.length === 0) {
+        grid.innerHTML = '<div class="empty-state"><p>No hackathons match your filters</p><p>Try adjusting your search criteria</p></div>';
+      } else {
+        grid.innerHTML = filtered.map(renderCard).join("");
+      }
+    }
+
+    function resetFilters() {
+      document.getElementById("filter-search").value = "";
+      document.getElementById("filter-format").value = "";
+      document.getElementById("filter-status").value = "";
+      document.getElementById("filter-chain").value = "";
+      document.getElementById("filter-prize-min").value = "";
+      document.getElementById("filter-deadline").value = "";
+      document.getElementById("filter-category").value = "";
+      document.getElementById("sort-by").value = "deadline";
+      applyFilters();
+    }
+
+    // Bind filter events
+    ["filter-search", "filter-format", "filter-status", "filter-chain",
+     "filter-prize-min", "filter-deadline", "filter-category", "sort-by"
+    ].forEach(function(id) {
+      var el = document.getElementById(id);
+      el.addEventListener("input", applyFilters);
+      el.addEventListener("change", applyFilters);
+    });
+
+    // Initial render
+    applyFilters();
+  </script>
+</body>
+</html>

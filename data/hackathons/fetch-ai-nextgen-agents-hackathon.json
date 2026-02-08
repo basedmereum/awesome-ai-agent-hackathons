@@ -1,0 +1,22 @@
+{
+  "id": "fetch-ai-nextgen-agents-hackathon",
+  "name": "Fetch.ai NextGen Agents Hackathon",
+  "organizer": "Fetch.ai / Internet Computer",
+  "url": "https://innovationlab.fetch.ai/events",
+  "status": "registration_open",
+  "format": "virtual",
+  "description": "Build autonomous AI agents using Fetch.ai ecosystem on decentralized infrastructure.",
+  "categories": [
+    "ai-agents",
+    "blockchain",
+    "fetch-ai",
+    "autonomous-agents"
+  ],
+  "blockchain": {
+    "chain": "Fetch.ai"
+  },
+  "links": {},
+  "source": "blockchain-fetch-ai",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.8
+}

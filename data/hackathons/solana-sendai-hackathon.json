@@ -1,0 +1,21 @@
+{
+  "id": "solana-sendai-hackathon",
+  "name": "Solana SendAI Hackathon",
+  "organizer": "SendAI / Solana",
+  "url": "https://hackathon.sendai.fun/",
+  "status": "registration_open",
+  "format": "virtual",
+  "categories": [
+    "ai-agents",
+    "blockchain",
+    "solana",
+    "autonomous-agents"
+  ],
+  "blockchain": {
+    "chain": "Solana"
+  },
+  "links": {},
+  "source": "blockchain-solana",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.8
+}

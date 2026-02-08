@@ -1,0 +1,32 @@
+{
+  "id": "colosseum-ai-agent-hackathon-solana",
+  "name": "Colosseum AI Agent Hackathon (Solana)",
+  "organizer": "Colosseum / Solana Foundation",
+  "url": "https://colosseum.com/agent-hackathon/",
+  "status": "active",
+  "format": "virtual",
+  "submissionDeadline": "2026-02-12",
+  "prizePool": {
+    "total": 100000,
+    "currency": "USDC",
+    "breakdown": {
+      "1st": 50000,
+      "2nd": 30000,
+      "3rd": 15000,
+      "Most Agentic": 5000
+    }
+  },
+  "categories": ["ai-agents", "autonomous-agents", "blockchain", "solana", "defi"],
+  "requirements": {
+    "techStack": [],
+    "teamSize": null,
+    "constraints": "All code must be written by AI agents"
+  },
+  "blockchain": {
+    "chain": "Solana"
+  },
+  "links": {},
+  "source": "blockchain-solana",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.8
+}
