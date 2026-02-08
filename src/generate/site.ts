@@ -119,16 +119,28 @@ export async function generateSite(): Promise<void> {
       margin-bottom: 2rem;
     }
 
-    .hero-ascii {
-      font-family: var(--mono);
-      font-size: 0.6rem;
-      line-height: 1.2;
-      color: var(--amber);
-      white-space: pre;
+    .hero-title {
       margin-bottom: 1.5rem;
       opacity: 0;
       animation: fadeUp 0.8s var(--ease-out) 0.1s forwards;
-      user-select: none;
+    }
+
+    .hero-label {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--text-tertiary);
+      letter-spacing: 0.06em;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-title h1 {
+      font-family: var(--mono);
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: var(--text-primary);
     }
 
     .hero-sub {
@@ -640,7 +652,6 @@ export async function generateSite(): Promise<void> {
     /* --- RESPONSIVE --- */
     @media (max-width: 768px) {
       .hero { padding: 2.5rem 0 2rem; }
-      .hero-ascii { font-size: 0.38rem; overflow-x: auto; }
       .stats-bar { gap: 1.25rem; flex-wrap: wrap; }
       .stat-value { font-size: 1.1rem; }
 
@@ -668,7 +679,7 @@ export async function generateSite(): Promise<void> {
 
     @media (max-width: 480px) {
       .page { padding: 0 1rem; }
-      .hero-ascii { font-size: 0.3rem; }
+      .hero-title h1 { font-size: 2rem; }
       .command-bar-body { grid-template-columns: 1fr; }
       .command-bar-row2 { grid-template-columns: 1fr; }
       .stats-bar { gap: 0.75rem; }
@@ -679,11 +690,10 @@ export async function generateSite(): Promise<void> {
   <div class="page">
 
     <header class="hero">
-      <div class="hero-ascii" aria-hidden="true">
- ___  ___   ___  ____  ____  ____    _  _   __    ___  __ _   __  ____  _  _   __   ____   __
-/ __)/ __) / __)(  _ \\(_  _)(  __)  / )( \\ / _\\  / __)(  / ) / _\\(_  _)/ )( \\ /  \\ (  _ \\ / _\\
-\\___ \\\\ \\  ( (__  )   /  )(   ) _)   ) __ (/    \\( (__  )  ( /    \\ )(  ) __ ((  O ) )   //    \\
-(____/(___/ \\___)(__\\_)(__) (____)  \\_)(_/\\_/\\_/ \\___)(__\\_)\\_/\\_/(__) \\_)(_/ \\__/ (__\\_)\\_/\\_/</div>
+      <div class="hero-title">
+        <span class="hero-label">// directory</span>
+        <h1>AI Agent<br>Hackathons</h1>
+      </div>
       <p class="hero-sub">
         Automatically updated directory of AI agent and agentic coding hackathons.
         Scraped every 6 hours. Filtered by deadline, prize pool, format, and chain.
