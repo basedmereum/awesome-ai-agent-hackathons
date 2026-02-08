@@ -392,8 +392,8 @@ export async function generateSite(): Promise<void> {
       <div class="links">
         <a href="./feed.xml">RSS Feed</a>
         <a href="./hackathons.ics">Calendar (iCal)</a>
-        <a href="https://github.com/your-username/awesome-ai-agent-hackathons">GitHub</a>
-        <a href="https://github.com/your-username/awesome-ai-agent-hackathons/issues/new?template=submit-hackathon.yml">Submit a Hackathon</a>
+        <a href="https://github.com/basedmereum/awesome-ai-agent-hackathons">GitHub</a>
+        <a href="https://github.com/basedmereum/awesome-ai-agent-hackathons/issues/new?template=submit-hackathon.yml">Submit a Hackathon</a>
       </div>
     </header>
 

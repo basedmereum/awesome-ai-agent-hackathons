@@ -4,7 +4,7 @@
 
 **12 active** | **12 total tracked** | **$218,000+ in active prizes**
 
-[Browse with filters](https://your-username.github.io/awesome-ai-agent-hackathons/) | [RSS Feed](./site/feed.xml) | [Submit a hackathon](https://github.com/your-username/awesome-ai-agent-hackathons/issues/new?template=submit-hackathon.yml)
+[Browse with filters](https://basedmereum.github.io/awesome-ai-agent-hackathons/) | [RSS Feed](./site/feed.xml) | [Submit a hackathon](https://github.com/basedmereum/awesome-ai-agent-hackathons/issues/new?template=submit-hackathon.yml)
 
 ---
 
@@ -71,7 +71,7 @@ New hackathons are extracted using LLM-powered parsing, deduplicated, and status
 
 ### Submit a Hackathon
 
-Found one we're missing? [Open an issue](https://github.com/your-username/awesome-ai-agent-hackathons/issues/new?template=submit-hackathon.yml) with the URL — our bot will extract the details automatically.
+Found one we're missing? [Open an issue](https://github.com/basedmereum/awesome-ai-agent-hackathons/issues/new?template=submit-hackathon.yml) with the URL — our bot will extract the details automatically.
 
 ### Contributing
 
