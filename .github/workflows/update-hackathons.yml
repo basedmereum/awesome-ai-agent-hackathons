@@ -41,6 +41,14 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         continue-on-error: true
 
+      - name: Scrape X/Twitter
+        if: ${{ secrets.X_BEARER_TOKEN != '' }}
+        run: npx tsx src/scrapers/twitter.ts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+        continue-on-error: true
+
       # Update lifecycle statuses based on dates
       - name: Update statuses
         run: npx tsx src/lifecycle.ts
