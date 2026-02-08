@@ -5,6 +5,14 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:AI Agent Hackathons
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260213
+DTEND;VALUE=DATE:20260213
+SUMMARY:Build Games 2026 - Deadline
+DESCRIPTION:virtual hackathon by Avalanche / Ava Labs. Prize: $1,000,000. https://build.avax.network/build-games
+URL:https://build.avax.network/build-games
+UID:avalanche-build-games-2026@hackathon-tracker
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260212
 DTEND;VALUE=DATE:20260212
 SUMMARY:Colosseum AI Agent Hackathon (Solana) - Deadline
@@ -43,5 +51,13 @@ SUMMARY:Microsoft AI Agents Hackathon 2026 - Deadline
 DESCRIPTION:virtual hackathon by Microsoft. Prize: $35,000. https://microsoft.github.io/AI_Agents_Hackathon/
 URL:https://microsoft.github.io/AI_Agents_Hackathon/
 UID:microsoft-ai-agents-hackathon-2026@hackathon-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260208
+DTEND;VALUE=DATE:20260208
+SUMMARY:OpenClaw USDC Hackathon on Moltbook - Deadline
+DESCRIPTION:virtual hackathon by Circle / OpenClaw. Prize: $30,000. https://www.circle.com/blog/openclaw-usdc-hackathon-on-moltbook
+URL:https://www.circle.com/blog/openclaw-usdc-hackathon-on-moltbook
+UID:openclaw-usdc-hackathon-moltbook@hackathon-tracker
 END:VEVENT
 END:VCALENDAR

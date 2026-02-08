@@ -2,7 +2,7 @@
 
 > An automatically updated, community-maintained directory of hackathons for AI agents and agentic coding.
 
-**12 active** | **12 total tracked** | **$218,000+ in active prizes**
+**13 active** | **13 total tracked** | **$1,218,000+ in active prizes**
 
 [Browse with filters](https://basedmereum.github.io/awesome-ai-agent-hackathons/) | [RSS Feed](./site/feed.xml) | [Submit a hackathon](https://github.com/basedmereum/awesome-ai-agent-hackathons/issues/new?template=submit-hackathon.yml)
 
@@ -12,14 +12,15 @@
 
 | Hackathon | Organizer | Prize Pool | Format | Deadline | Status |
 |-----------|-----------|------------|--------|----------|--------|
+| [OpenClaw USDC Hackathon on Moltbook](https://www.circle.com/blog/openclaw-usdc-hackathon-on-moltbook) | Circle / OpenClaw (Base) | $30,000 | virtual | 2026-02-08 | 🔨 Active (Building) |
 | [Colosseum AI Agent Hackathon (Solana)](https://colosseum.com/agent-hackathon/) | Colosseum / Solana Foundation (Solana) | $100,000 | virtual | 2026-02-12 | 🔨 Active (Building) |
+| [Build Games 2026](https://build.avax.network/build-games) | Avalanche / Ava Labs (Avalanche) | $1,000,000 | virtual | 2026-02-13 | ✅ Registration Open |
 | [LabLab Web3 AI Agent Hackathon](https://lablab.ai/ai-hackathons) | LabLab.ai | 50,000 SURGE Token | virtual | 2026-02-19 | 🔨 Active (Building) |
 | [DeveloperWeek 2026 Hackathon](https://www.developerweek.com/hackathon/) | DeveloperWeek | TBD | hybrid | 2026-02-20 | 🔨 Active (Building) |
 | [Hackathon for MCP and AI Agents](https://aihackathon.dev/) | AI Hackathon Dev | TBD | virtual | 2026-03-01 | ✅ Registration Open |
 | [Microsoft AI Agents Hackathon 2026](https://microsoft.github.io/AI_Agents_Hackathon/) | Microsoft | $35,000 | virtual | 2026-04-30 | ✅ Registration Open |
 | [100 Agents Hackathon](https://100agents.devpost.com/) | 100 Agents Community | TBD | virtual | TBD | ✅ Registration Open |
 | [Aptos x GCP AI Agent Takeover](https://thunderdome.hackerearth.com/) | Aptos / Google Cloud (Aptos) | $3,000 | virtual | TBD | 🔨 Active (Building) |
-| [Circle Agent-Powered Hackathon](https://stabledash.com/news/2026-02-03-openclaw-announces-30000-usdc-prize-pool-for-agent-powered-hackathon) | Circle / OpenClaw | $30,000 | virtual | TBD | 🔨 Active (Building) |
 | [Fetch.ai NextGen Agents Hackathon](https://innovationlab.fetch.ai/events) | Fetch.ai / Internet Computer (Fetch.ai) | TBD | virtual | TBD | ✅ Registration Open |
 | [NVIDIA Agent Toolkit Hackathon](https://developer.nvidia.com/agentiq-hackathon) | NVIDIA | TBD | virtual | TBD | ✅ Registration Open |
 | [Solana SendAI Hackathon](https://hackathon.sendai.fun/) | SendAI / Solana (Solana) | TBD | virtual | TBD | ✅ Registration Open |
@@ -30,7 +31,9 @@
 
 | Hackathon | Chain | Prize Pool | Format | Deadline | Status |
 |-----------|-------|------------|--------|----------|--------|
+| [OpenClaw USDC Hackathon on Moltbook](https://www.circle.com/blog/openclaw-usdc-hackathon-on-moltbook) | Base | $30,000 | virtual | 2026-02-08 | 🔨 Active (Building) |
 | [Colosseum AI Agent Hackathon (Solana)](https://colosseum.com/agent-hackathon/) | Solana | $100,000 | virtual | 2026-02-12 | 🔨 Active (Building) |
+| [Build Games 2026](https://build.avax.network/build-games) | Avalanche | $1,000,000 | virtual | 2026-02-13 | ✅ Registration Open |
 | [Aptos x GCP AI Agent Takeover](https://thunderdome.hackerearth.com/) | Aptos | $3,000 | virtual | TBD | 🔨 Active (Building) |
 | [Fetch.ai NextGen Agents Hackathon](https://innovationlab.fetch.ai/events) | Fetch.ai | TBD | virtual | TBD | ✅ Registration Open |
 | [Solana SendAI Hackathon](https://hackathon.sendai.fun/) | Solana | TBD | virtual | TBD | ✅ Registration Open |
@@ -38,19 +41,23 @@
 
 ## Categories
 
-- **ai-agents** (12)
+- **agentic-commerce** (1)
+- **ai-agents** (13)
 - **aptos** (1)
 - **autogen** (1)
 - **autonomous-agents** (9)
+- **avalanche** (1)
 - **azure** (1)
-- **blockchain** (7)
-- **defi** (2)
+- **blockchain** (8)
+- **defi** (3)
 - **fetch-ai** (1)
+- **gaming** (1)
 - **general** (1)
 - **mcp** (1)
 - **multi-agent** (1)
 - **nvidia** (1)
 - **semantic-kernel** (1)
+- **smart-contracts** (1)
 - **solana** (2)
 - **sui** (1)
 - **usdc** (1)

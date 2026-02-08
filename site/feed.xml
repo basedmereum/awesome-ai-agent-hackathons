@@ -5,7 +5,7 @@
     <link>https://github.com/basedmereum/awesome-ai-agent-hackathons</link>
     <description>Automatically updated directory of AI agent and agentic coding hackathons</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Feb 2026 15:11:52 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 15:28:04 GMT</lastBuildDate>
     <atom:link href="https://basedmereum.github.io/awesome-ai-agent-hackathons/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>100 Agents Hackathon</title>
@@ -32,16 +32,17 @@
       <category>autonomous-agents</category>
     </item>
     <item>
-      <title>Circle Agent-Powered Hackathon</title>
-      <link>https://stabledash.com/news/2026-02-03-openclaw-announces-30000-usdc-prize-pool-for-agent-powered-hackathon</link>
-      <guid isPermaLink="true">https://stabledash.com/news/2026-02-03-openclaw-announces-30000-usdc-prize-pool-for-agent-powered-hackathon</guid>
-      <description>virtual hackathon by Circle / OpenClaw. Prize: $30,000. Deadline: TBD</description>
+      <title>Build Games 2026</title>
+      <link>https://build.avax.network/build-games</link>
+      <guid isPermaLink="true">https://build.avax.network/build-games</guid>
+      <description>virtual hackathon by Avalanche / Ava Labs. Prize: $1,000,000 | Avalanche. Deadline: 2026-02-13</description>
       <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
       <category>virtual</category>
-      <category>ai-agents</category>
       <category>blockchain</category>
-      <category>usdc</category>
-      <category>autonomous-agents</category>
+      <category>avalanche</category>
+      <category>defi</category>
+      <category>gaming</category>
+      <category>ai-agents</category>
     </item>
     <item>
       <title>Colosseum AI Agent Hackathon (Solana)</title>
@@ -122,6 +123,20 @@
       <category>ai-agents</category>
       <category>nvidia</category>
       <category>autonomous-agents</category>
+    </item>
+    <item>
+      <title>OpenClaw USDC Hackathon on Moltbook</title>
+      <link>https://www.circle.com/blog/openclaw-usdc-hackathon-on-moltbook</link>
+      <guid isPermaLink="true">https://www.circle.com/blog/openclaw-usdc-hackathon-on-moltbook</guid>
+      <description>virtual hackathon by Circle / OpenClaw. Prize: $30,000 | Base. Deadline: 2026-02-08</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>virtual</category>
+      <category>ai-agents</category>
+      <category>autonomous-agents</category>
+      <category>blockchain</category>
+      <category>usdc</category>
+      <category>agentic-commerce</category>
+      <category>smart-contracts</category>
     </item>
     <item>
       <title>Solana SendAI Hackathon</title>

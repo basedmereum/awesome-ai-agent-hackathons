@@ -48,6 +48,34 @@ const BLOCKCHAIN_SOURCES = [
     chain: "NEAR",
     name: "NEAR Hackathons",
   },
+  // Avalanche
+  {
+    url: "https://build.avax.network/build-games",
+    chain: "Avalanche",
+    name: "Avalanche Build Games",
+  },
+  {
+    url: "https://build.avax.network/hackathons",
+    chain: "Avalanche",
+    name: "Avalanche Hackathons",
+  },
+  // Circle / Base
+  {
+    url: "https://www.circle.com/blog",
+    chain: "Base",
+    name: "Circle Hackathons",
+  },
+  {
+    url: "https://www.moltbook.com/m/usdc",
+    chain: "Base",
+    name: "Moltbook USDC Hackathons",
+  },
+  // Arbitrum
+  {
+    url: "https://arbitrum.io/ecosystem",
+    chain: "Arbitrum",
+    name: "Arbitrum Ecosystem",
+  },
 ]
 
 const HEADERS = {

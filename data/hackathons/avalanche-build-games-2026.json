@@ -1,0 +1,52 @@
+{
+  "id": "avalanche-build-games-2026",
+  "name": "Build Games 2026",
+  "organizer": "Avalanche / Ava Labs",
+  "url": "https://build.avax.network/build-games",
+  "status": "registration_open",
+  "format": "virtual",
+  "description": "Avalanche's flagship online builder competition. Six fast-paced weeks to turn your next big idea into a real product on Avalanche. $1M in total prizes.",
+  "registrationOpen": "2026-01-01",
+  "registrationDeadline": null,
+  "submissionDeadline": "2026-02-13",
+  "resultsDate": null,
+  "prizePool": {
+    "total": 1000000,
+    "currency": "USD",
+    "breakdown": {
+      "Grand Prize": 100000,
+      "Runner-Up": 75000,
+      "3rd Place": 50000,
+      "Category Prizes": 40000,
+      "Ecosystem Grants": 735000
+    }
+  },
+  "categories": [
+    "blockchain",
+    "avalanche",
+    "defi",
+    "gaming",
+    "ai-agents"
+  ],
+  "requirements": {
+    "techStack": [
+      "Avalanche"
+    ],
+    "teamSize": {
+      "min": 1,
+      "max": 5
+    },
+    "constraints": "Original new concepts. Week 1: video pitch, Weeks 2-3: demo + GitHub, Weeks 4-5: growth plan, Week 6: final pitch."
+  },
+  "blockchain": {
+    "chain": "Avalanche",
+    "ecosystem": "DeFi/Gaming"
+  },
+  "location": null,
+  "links": {
+    "apply": "https://build.avax.network/build-games"
+  },
+  "source": "manual-submission",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.95
+}

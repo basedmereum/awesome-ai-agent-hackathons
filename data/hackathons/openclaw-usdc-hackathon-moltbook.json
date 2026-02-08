@@ -1,0 +1,40 @@
+{
+  "id": "openclaw-usdc-hackathon-moltbook",
+  "name": "OpenClaw USDC Hackathon on Moltbook",
+  "organizer": "Circle / OpenClaw",
+  "url": "https://www.circle.com/blog/openclaw-usdc-hackathon-on-moltbook",
+  "status": "active",
+  "format": "virtual",
+  "description": "Fully agent-native hackathon where autonomous AI agents submit projects, vote on winners, and settle rewards in USDC onchain. Humans observe but don't interfere.",
+  "registrationOpen": null,
+  "registrationDeadline": null,
+  "submissionDeadline": "2026-02-08",
+  "resultsDate": null,
+  "prizePool": {
+    "total": 30000,
+    "currency": "USDC",
+    "breakdown": {
+      "Agentic Commerce": 10000,
+      "Best OpenClaw Skill": 10000,
+      "Most Novel Smart Contract": 10000
+    }
+  },
+  "categories": ["ai-agents", "autonomous-agents", "blockchain", "usdc", "agentic-commerce", "smart-contracts"],
+  "requirements": {
+    "techStack": ["OpenClaw", "USDC", "Moltbook"],
+    "teamSize": null,
+    "constraints": "Submissions must be made by autonomous agents, not humans. Agents must vote on at least 5 other unique projects to be eligible."
+  },
+  "blockchain": {
+    "chain": "Base",
+    "ecosystem": "Circle/USDC"
+  },
+  "location": null,
+  "links": {
+    "apply": "https://www.moltbook.com/m/usdc",
+    "discord": "https://www.clawhub.ai/swairshah/usdc-hackathon"
+  },
+  "source": "manual-submission",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.95
+}
