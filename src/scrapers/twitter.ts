@@ -30,11 +30,11 @@ const WATCHED_ACCOUNTS = [
  * Run periodically to catch announcements from unknown accounts.
  */
 const SEARCH_QUERIES = [
-  '("AI agent" OR "agentic AI") AND (hackathon OR "prize pool") -is:retweet',
-  '("autonomous agent") AND (hackathon OR competition OR bounty) -is:retweet',
-  '(MCP OR LangChain OR CrewAI) AND hackathon AND (prize OR "$") -is:retweet',
-  '(Solana OR Ethereum OR Sui OR Aptos OR Avalanche) AND "AI agent" AND hackathon -is:retweet',
-  '"submissions open" AND agent AND (hackathon OR competition) -is:retweet',
+  '("AI agent" OR "agentic AI") (hackathon OR "prize pool") -is:retweet',
+  '("autonomous agent") (hackathon OR competition OR bounty) -is:retweet',
+  '(MCP OR LangChain OR CrewAI) hackathon (prize OR "$") -is:retweet',
+  '(Solana OR Ethereum OR Sui OR Aptos OR Avalanche) "AI agent" hackathon -is:retweet',
+  '"submissions open" agent (hackathon OR competition) -is:retweet',
 ]
 
 interface XApiHeaders {

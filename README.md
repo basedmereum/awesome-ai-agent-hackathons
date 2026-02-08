@@ -2,7 +2,7 @@
 
 > An automatically updated, community-maintained directory of hackathons for AI agents and agentic coding.
 
-**13 active** | **13 total tracked** | **$1,218,000+ in active prizes**
+**15 active** | **15 total tracked** | **$4,218,000+ in active prizes**
 
 [Browse with filters](https://basedmereum.github.io/awesome-ai-agent-hackathons/) | [RSS Feed](./site/feed.xml) | [Submit a hackathon](https://github.com/basedmereum/awesome-ai-agent-hackathons/issues/new?template=submit-hackathon.yml)
 
@@ -21,10 +21,12 @@
 | [Microsoft AI Agents Hackathon 2026](https://microsoft.github.io/AI_Agents_Hackathon/) | Microsoft | $35,000 | virtual | 2026-04-30 | ✅ Registration Open |
 | [100 Agents Hackathon](https://100agents.devpost.com/) | 100 Agents Community | TBD | virtual | TBD | ✅ Registration Open |
 | [Aptos x GCP AI Agent Takeover](https://thunderdome.hackerearth.com/) | Aptos / Google Cloud (Aptos) | $3,000 | virtual | TBD | 🔨 Active (Building) |
+| [Build In Public Hackathon](https://hackathon.pump.fun/) | Pump.fun (Solana) | $3,000,000 | virtual | TBD | ✅ Registration Open |
 | [Fetch.ai NextGen Agents Hackathon](https://innovationlab.fetch.ai/events) | Fetch.ai / Internet Computer (Fetch.ai) | TBD | virtual | TBD | ✅ Registration Open |
 | [NVIDIA Agent Toolkit Hackathon](https://developer.nvidia.com/agentiq-hackathon) | NVIDIA | TBD | virtual | TBD | ✅ Registration Open |
 | [Solana SendAI Hackathon](https://hackathon.sendai.fun/) | SendAI / Solana (Solana) | TBD | virtual | TBD | ✅ Registration Open |
 | [Sui Agent Typhoon](https://sui.io/sui-agent-typhoon) | Sui Foundation (Sui) | TBD | virtual | TBD | ✅ Registration Open |
+| [TreeHacks 2026](https://innovationlab.fetch.ai/events/tree-hacks-2026) | Fetch.ai Innovation Lab (Fetch.ai) | TBD | in-person | TBD | ✅ Registration Open |
 
 
 ## Blockchain / Web3 AI Agent Hackathons
@@ -35,22 +37,25 @@
 | [Colosseum AI Agent Hackathon (Solana)](https://colosseum.com/agent-hackathon/) | Solana | $100,000 | virtual | 2026-02-12 | 🔨 Active (Building) |
 | [Build Games 2026](https://build.avax.network/build-games) | Avalanche | $1,000,000 | virtual | 2026-02-13 | ✅ Registration Open |
 | [Aptos x GCP AI Agent Takeover](https://thunderdome.hackerearth.com/) | Aptos | $3,000 | virtual | TBD | 🔨 Active (Building) |
+| [Build In Public Hackathon](https://hackathon.pump.fun/) | Solana | $3,000,000 | virtual | TBD | ✅ Registration Open |
 | [Fetch.ai NextGen Agents Hackathon](https://innovationlab.fetch.ai/events) | Fetch.ai | TBD | virtual | TBD | ✅ Registration Open |
 | [Solana SendAI Hackathon](https://hackathon.sendai.fun/) | Solana | TBD | virtual | TBD | ✅ Registration Open |
 | [Sui Agent Typhoon](https://sui.io/sui-agent-typhoon) | Sui | TBD | virtual | TBD | ✅ Registration Open |
+| [TreeHacks 2026](https://innovationlab.fetch.ai/events/tree-hacks-2026) | Fetch.ai | TBD | in-person | TBD | ✅ Registration Open |
 
 ## Categories
 
 - **agentic-commerce** (1)
-- **ai-agents** (13)
+- **ai-agents** (14)
 - **aptos** (1)
 - **autogen** (1)
-- **autonomous-agents** (9)
+- **autonomous-agents** (10)
 - **avalanche** (1)
 - **azure** (1)
-- **blockchain** (8)
+- **blockchain** (10)
 - **defi** (3)
 - **fetch-ai** (1)
+- **fetch.ai** (1)
 - **gaming** (1)
 - **general** (1)
 - **mcp** (1)

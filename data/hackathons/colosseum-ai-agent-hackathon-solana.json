@@ -16,17 +16,31 @@
       "Most Agentic": 5000
     }
   },
-  "categories": ["ai-agents", "autonomous-agents", "blockchain", "solana", "defi"],
+  "categories": [
+    "ai-agents",
+    "autonomous-agents",
+    "blockchain",
+    "solana",
+    "defi"
+  ],
   "requirements": {
     "techStack": [],
     "teamSize": null,
-    "constraints": "All code must be written by AI agents"
+    "constraints": null
   },
   "blockchain": {
-    "chain": "Solana"
+    "chain": "Solana",
+    "ecosystem": null,
+    "tokenPrize": false
   },
-  "links": {},
+  "links": {
+    "apply": null,
+    "discord": null,
+    "twitter": "https://twitter.com/colosseum",
+    "pastWinners": null
+  },
   "source": "blockchain-solana",
   "lastUpdated": "2026-02-08",
-  "confidence": 0.8
+  "confidence": 0.8,
+  "description": "Solana's first hackathon where AI agents compete. Build, submit, and vote on Solana projects created by AI."
 }

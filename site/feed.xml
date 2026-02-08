@@ -5,7 +5,7 @@
     <link>https://github.com/basedmereum/awesome-ai-agent-hackathons</link>
     <description>Automatically updated directory of AI agent and agentic coding hackathons</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Feb 2026 15:28:04 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 16:13:21 GMT</lastBuildDate>
     <atom:link href="https://basedmereum.github.io/awesome-ai-agent-hackathons/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>100 Agents Hackathon</title>
@@ -43,6 +43,15 @@
       <category>defi</category>
       <category>gaming</category>
       <category>ai-agents</category>
+    </item>
+    <item>
+      <title>Build In Public Hackathon</title>
+      <link>https://hackathon.pump.fun/</link>
+      <guid isPermaLink="true">https://hackathon.pump.fun/</guid>
+      <description>virtual hackathon by Pump.fun. Prize: $3,000,000 | Solana. Deadline: TBD</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>virtual</category>
+      <category>blockchain</category>
     </item>
     <item>
       <title>Colosseum AI Agent Hackathon (Solana)</title>
@@ -161,6 +170,18 @@
       <category>blockchain</category>
       <category>sui</category>
       <category>autonomous-agents</category>
+    </item>
+    <item>
+      <title>TreeHacks 2026</title>
+      <link>https://innovationlab.fetch.ai/events/tree-hacks-2026</link>
+      <guid isPermaLink="true">https://innovationlab.fetch.ai/events/tree-hacks-2026</guid>
+      <description>in-person hackathon by Fetch.ai Innovation Lab. Prize: TBD | Fetch.ai. Deadline: TBD</description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category>in-person</category>
+      <category>ai-agents</category>
+      <category>autonomous-agents</category>
+      <category>blockchain</category>
+      <category>fetch.ai</category>
     </item>
   </channel>
 </rss>

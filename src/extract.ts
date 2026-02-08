@@ -76,7 +76,21 @@ export async function extractFromContent(
   }
 
   const raw = JSON.parse(jsonMatch[0])
-  return ExtractionResultSchema.parse(raw)
+  const parsed = ExtractionResultSchema.parse(raw)
+
+  if (!parsed.name || !parsed.url || !parsed.format) {
+    throw new Error("Extraction returned null for required fields (name, url, or format)")
+  }
+
+  return {
+    ...parsed,
+    name: parsed.name,
+    organizer: parsed.organizer ?? "Unknown",
+    url: parsed.url,
+    format: parsed.format,
+    categories: parsed.categories ?? [],
+    confidence: parsed.confidence,
+  }
 }
 
 export async function extractFromUrl(url: string): Promise<ExtractionResult> {

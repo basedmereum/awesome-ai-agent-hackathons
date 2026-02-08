@@ -1,0 +1,43 @@
+{
+  "id": "build-in-public-hackathon",
+  "name": "Build In Public Hackathon",
+  "organizer": "Pump.fun",
+  "url": "https://hackathon.pump.fun/",
+  "status": "registration_open",
+  "format": "virtual",
+  "description": "Build in public and compete for $3M in funding. Launch fast, ship openly, and earn investment through real market momentum on Pump.fun.",
+  "registrationOpen": null,
+  "registrationDeadline": null,
+  "submissionDeadline": null,
+  "resultsDate": null,
+  "prizePool": {
+    "total": 3000000,
+    "currency": "USD",
+    "breakdown": null
+  },
+  "categories": [
+    "blockchain"
+  ],
+  "requirements": {
+    "techStack": [
+      "Pump.fun"
+    ],
+    "teamSize": null,
+    "constraints": null
+  },
+  "blockchain": {
+    "chain": "Solana",
+    "ecosystem": "DeFi",
+    "tokenPrize": false
+  },
+  "location": null,
+  "links": {
+    "apply": null,
+    "discord": null,
+    "twitter": null,
+    "pastWinners": null
+  },
+  "source": "twitter",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.55
+}

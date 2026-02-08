@@ -1,0 +1,38 @@
+{
+  "id": "treehacks-2026",
+  "name": "TreeHacks 2026",
+  "organizer": "Fetch.ai Innovation Lab",
+  "url": "https://innovationlab.fetch.ai/events/tree-hacks-2026",
+  "status": "registration_open",
+  "format": "in-person",
+  "description": "Join Fetch.ai Innovation Lab for a whirlwind 36 hours of creativity, collaboration, and groundbreaking innovation at Stanford University.",
+  "registrationOpen": null,
+  "registrationDeadline": null,
+  "submissionDeadline": null,
+  "resultsDate": null,
+  "prizePool": null,
+  "categories": [
+    "ai-agents",
+    "autonomous-agents",
+    "blockchain",
+    "fetch.ai"
+  ],
+  "requirements": {
+    "techStack": [],
+    "teamSize": null,
+    "constraints": null
+  },
+  "blockchain": {
+    "chain": "Fetch.ai"
+  },
+  "location": "Stanford University, USA",
+  "links": {
+    "apply": null,
+    "discord": null,
+    "twitter": null,
+    "pastWinners": null
+  },
+  "source": "blockchain-fetch.ai",
+  "lastUpdated": "2026-02-08",
+  "confidence": 0.4
+}

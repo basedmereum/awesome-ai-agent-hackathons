@@ -17,10 +17,23 @@
     "autonomous-agents"
   ],
   "blockchain": {
-    "chain": "Aptos"
+    "chain": "Aptos",
+    "ecosystem": null,
+    "tokenPrize": false
   },
-  "links": {},
+  "links": {
+    "apply": "https://thunderdome.hackerearth.com/",
+    "discord": null,
+    "twitter": null,
+    "pastWinners": null
+  },
   "source": "blockchain-aptos",
   "lastUpdated": "2026-02-08",
-  "confidence": 0.8
+  "confidence": 0.8,
+  "description": "An online hackathon focused on AI agents, organized by Aptos in partnership with GCP on the HackerEarth platform.",
+  "requirements": {
+    "techStack": [],
+    "teamSize": null,
+    "constraints": null
+  }
 }

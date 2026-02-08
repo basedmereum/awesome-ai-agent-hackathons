@@ -1,3 +1,4 @@
+import "dotenv/config"
 import { scrapeDevpost } from "./scrapers/devpost.js"
 import { scrapeLablab } from "./scrapers/lablab.js"
 import { scrapeBlockchain } from "./scrapers/blockchain.js"
